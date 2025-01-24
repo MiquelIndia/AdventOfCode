@@ -20,14 +20,14 @@ def _get_diagonal_lines(lines = list()) -> list:
     return diagonal_lines
 
 
-def count_xmas_words(lines = list()) -> int:
+def count_words(lines = list(), word: str = "XMAS") -> int:
     whole_lines = cp.copy(lines)
     whole_lines += _get_vertical_lines(lines)
     whole_lines += _get_diagonal_lines(lines)
 
     count = 0
     for line in whole_lines:
-        count += len(re.findall("XMAS", line))
+        count += len(re.findall(word, line))
         count += len(re.findall("XMAS"[::-1], line))
     return count
 

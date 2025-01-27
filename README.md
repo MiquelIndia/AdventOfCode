@@ -26,9 +26,9 @@ python days/exercise3.py
 
 ### List of exercises
 
-- [ ] Day 1 [1]
-- [ ] Day 2 [2]
-- [ ] Day 3 [3]
+- [X] Day 1 [1]
+- [X] Day 2 [2]
+- [X] Day 3 [3]
 - [ ] Day 4 [4]
 - [ ] Day 5 [5]
 - [ ] Day 6 [6]

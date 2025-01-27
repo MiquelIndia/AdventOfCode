@@ -34,8 +34,8 @@ def extract_conditioned_memory_operations_value(input_string):
 def main(input_path):
     with open(input_path, "r") as file:
         input_string = file.read()
-        print(extract_memory_operations_value(input_string))
-        print(extract_conditioned_memory_operations_value(input_string))
+        print("Multiplications sum: ", extract_memory_operations_value(input_string))
+        print("Multiplications sum after instructions filtering: ", extract_conditioned_memory_operations_value(input_string))
 
 if __name__ == "__main__":
     main("data/input_exercise3.txt")

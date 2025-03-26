@@ -36,7 +36,7 @@ def _get_diagonal_lines(lines = list()) -> list:
             if 0 <= j < len(lines[i]):
                 diagonal_line += lines[i][j]
         if diagonal_line:
-            diagonal_lines.append(diagonal_line)
+            diagonal_lines.append(diagonal_line[::-1])
     
     return diagonal_lines
 
@@ -47,6 +47,7 @@ def count_xmas_words(lines = list(), word: str = "XMAS") -> int:
     whole_lines += _get_diagonal_lines(lines)
     count = 0
     for line in whole_lines:
+        print(line)
         count += len(re.findall(word, line))
         count += len(re.findall(word[::-1], line))
     return count

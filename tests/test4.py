@@ -15,7 +15,7 @@ def test_get_vertical_lines(input_lines, output_lines):
     assert _get_vertical_lines(input_lines) == output_lines
 
 @pytest.mark.parametrize("input_lines, output_lines", [
-    (["ABCD", "EFGH", "IJKL"], ["I", "EJ", "AFK", "BGL", "CH", "D", "L", "HK", "DGJ", "CFI", "BE", "A"]),
+    (["ABCD", "EFGH", "IJKL"], ["I", "EJ", "AFK", "BGL", "CH", "D", "L", "KH", "JGD", "IFC", "EB", "A"]),
 
 ])
 def test_get_diagonal_lines(input_lines, output_lines):
